@@ -1,0 +1,20 @@
+{
+  "name": "aurea_app",
+  "version": "1.0.0",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "expo": "^49.0.0",
+    "react": "18.2.0",
+    "react-native": "0.72.4",
+    "expo-speech": "~11.2.0",
+    "expo-av": "~13.2.1",
+    "react-native-dotenv": "^3.3.1",
+    "react-native-voice": "^2.1.2"
+  }
+}
