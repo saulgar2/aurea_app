@@ -1,0 +1,8 @@
+# Node modules
+node_modules/
+# Environment variables
+.env
+.expo/
+web-build/
+# Mac
+.DS_Store
