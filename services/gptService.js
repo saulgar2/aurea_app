@@ -1,6 +1,8 @@
 import Constants from 'expo-constants';
 
-const apiKey = Constants.expoConfig.extra.openaiApiKey;
+const { expoConfig, manifest } = Constants;
+const apiKey =
+  expoConfig?.extra?.openaiApiKey || manifest?.extra?.openaiApiKey;
 
 export async function askGpt(userText, ageGroup, history) {
   const messages = history.map((m) => ({ role: m.from === 'bot' ? 'assistant' : 'user', content: m.text }));
